@@ -1,0 +1,455 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: 0;
+}
+
+.head{
+    display:flex;
+    flex-direction: row;
+    justify-content: end;
+    background-color:white;
+}
+.fhead{
+    font-size: 13px;
+    text-decoration: none;
+    color:black;
+    padding:5px 8px
+}
+.line-doc{
+    margin-top: 5px;
+    border-left: 1px #CCCCCC solid;
+    height:18px
+}
+header{
+    display: flex;
+    height:60px;
+    background-color: white;
+    border-bottom:1px solid black;
+    padding-left:27%
+    
+}
+.imghead{
+    width:130px;
+    height:90px;
+    position: absolute;
+    top:-18px;
+    left: -20px;
+
+}
+.nav{
+    padding:15px 25px;
+    font-family: 'Noto Sans', sans-serif;
+    position: relative;
+    font-size: 15px;
+    color: black;
+    text-decoration: none;
+}
+
+.nav::after{
+    content: "";
+    position: absolute;
+    background-color: crimson;
+    height:3px;
+    width:0%;
+    top: 40px;
+    left:10px;
+    bottom: -10px;  
+    transition: 0.7s;
+}
+
+.nav:hover::after{
+ width: 80%;
+}
+.nav-icon{
+    font-size: 21px;
+    padding: 15px 13px;
+}
+.nav-icon:hover{
+    opacity: 0.7;
+}
+.nav-option{
+    color: black;
+}
+
+.input{
+    height:30px;
+    width:150px;
+ border:white 1px outset;
+ margin-top:10px
+ 
+}
+.input-nav input[type=text]{
+    padding-left:40px
+}
+.input-nav{
+    position: relative;
+    padding:0px 30px;
+    margin-left: 90px;
+    
+}
+#icon{
+    position: absolute;
+    left:39px;
+    bottom: 25px;
+}
+
+.welcome{
+    position: absolute;
+    font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+    top:180px;
+    color:white;
+    font-size: 70px;
+    padding-left: 25px;
+    
+}
+.wel{
+    font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+    position: absolute;
+    color:white;
+    top:260px;
+    width: 300px;
+    font-size: 15px;
+    padding-left:30px
+}
+.btn1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    border:solid 1px ;
+    background-color: white;
+    width:170px;
+    height:60px; 
+    top:310px  ;
+    left:25px;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    color:black;
+    font-size: 15px;
+}
+.btn2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    border:1px solid white;
+    background-color: #fff;
+    width:170px;
+    height:60px;
+    top:390px ;
+    left:25px;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    color:black;
+    font-size: 15px;
+}
+.p1{
+    position: absolute;
+    border:1px solid white;
+    background-color: transparent;
+    width: 170px;
+    height:50px;
+    top:325px;
+    left:30px    ;
+   }
+.p2{
+    position: absolute;
+    border:1px solid white;
+    background-color:transparent;
+    width:171px;
+    height:50px;
+    top:406px;
+    left:30px;
+}
+.btn1:hover{
+    background-color:crimson;
+    color: white;
+    transition: 0.5s;
+    border:1px solid black;
+    
+}
+.btn2:hover{
+    background-color:crimson;
+    color: white;
+    transition: 0.5s;
+    border:1px solid black;
+    
+}
+.title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+    font-family: 'Gabarito', cursive;
+    border:black solid 1px;
+    color:white;
+    background-color:black;
+    width: 100px;
+    height:50px;
+    margin-left: 30px;
+    margin-top:20px
+}
+.hot-all{
+    display: flex;
+}
+.hot {
+    width:310px;
+    padding-left:20px;
+    padding-top:30px;
+    font-size: 10px;
+    
+}
+.buy-face{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    bottom: 290px;
+    left: 38%;
+    align-items: center;
+    color:white;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 15px;
+    width:80px;
+    height:60px;
+    background-color: black;
+    opacity: 0;
+    transition: 0.5s;
+}
+.hot:hover .hot-img{
+    opacity: 0.3;
+}
+.hot:hover .buy-face{
+    opacity: 1;
+}
+.hot img{   
+    object-fit: contain;
+    width:310px;
+    height: 310px;
+    transition: 0.5s;
+}
+.hot2:hover{
+    border: black solid 1px;
+}
+
+
+.discount1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border:1px solid crimson;
+    background-color: crimson;
+    color: white;
+    position:relative;
+    bottom:311px;
+    left:253px;
+    width: 55px;
+    height:20px;
+    font-size: 14px;   
+}
+.discount2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border:1px solid crimson;
+    background-color: crimson;
+    color: white;
+    position: relative;
+    bottom:311px;
+    left:253px;
+    width: 55px;
+    height:20px;
+    font-size: 14px;   
+}
+.discount3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border:1px solid crimson;
+    background-color: crimson;
+    color: white;
+    position: relative;
+    bottom:311px;
+    left:253px;
+    width: 55px;
+    height:20px;
+    font-size: 14px;   
+}
+.discount4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border:1px solid crimson;
+    background-color: crimson;
+    color: white;
+    position: relative;
+    bottom:311px;
+    left:253px;
+    width: 55px;
+    height:20px;
+    font-size: 14px;   
+}
+.detail{
+    border:1px solid white;
+    background-color: white;
+    font-size: 15px;
+    padding-bottom: 3px;
+    text-decoration: none;
+    color:black;
+    font-family: 'Open Sans', sans-serif;
+}
+.hot i{
+    font-size: 10px;
+    padding-top: 4px;
+}
+.img{
+    width: 100%;
+    object-fit: contain;
+}
+.price{
+    font-size: 18px;
+    padding-top: 4px;
+    color: crimson;
+}
+.price del{
+    color: black;
+}
+.slide{
+    width:100%;
+    height: 300px;
+    object-fit: cover;
+}
+.info-all{
+    display:flex;
+    align-items: center;
+}
+.men-all{
+    display: flex;
+}
+
+.more{
+    color: black;
+    margin-left: 1100px;
+    margin-top:20px;
+    font-size: 15px;
+    font-family: 'Raleway', sans-serif;
+}
+.more:hover{
+   background: black;
+   color :white;
+}
+.girl{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+    font-family: 'Gabarito', cursive;
+    border:black solid 1px;
+    color:white;
+    background-color:black;
+    width: 80px;
+    height:30px;
+    margin-left: 30px;
+    margin-top:20px
+}
+.line{
+    padding-left: 105px;
+    width: 90%;
+    border:#A9A9A9 1px solid;
+}
+.topic{
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 60px;
+    
+}
+.topic-pic{
+    object-fit: cover;
+    width:300px;
+    height: 380px;
+    padding-top:30px;
+}
+.topic-info{
+    width: 300px;
+}
+.topic h3{
+    font-family: 'Inter', sans-serif;
+}
+.topic p{
+    font-size: 11px;
+    color: black;
+    font-family: 'Inter', sans-serif;
+}
+.topic a{
+    color:black;
+    font-size: 14px;
+    font-family: 'Kanit', sans-serif;
+}
+.footer-log{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #EDE734;
+    height:70px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+
+}
+.footer-log p{
+    font-size: 30px;
+}
+.footer-log a{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+   width:150px;
+   height:40px;
+   background-color:black;
+   color: white;
+  border: black 1px solid;
+  margin-left: 20px;
+  font-size: 15px;
+  text-decoration: none;
+}
+.footer-log a:hover{
+    background-color: crimson;
+    transition: 0.7s;
+    
+}
+footer{
+    background-color: black;
+    padding-top: 30px;
+}
+.footer-icon{
+    display:flex;
+    justify-content: center;
+    height:80px
+}
+footer p{
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    color: white;
+}
+footer i{
+    padding-top:10px;
+    padding-left:5px
+}
+footer i:hover{
+    color:brown
+}
+@media (min-width:1497px)and(max-width:1498px){
+    .hot{
+       
+        padding-left: 50px;
+    }
+  
+    .input-nav{
+        margin-left: 170px;
+    }
+    .more{
+        margin-left: 300px;
+    }
+    
+
+}

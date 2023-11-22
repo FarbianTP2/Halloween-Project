@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/4c84863d74.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@800&display=swap" rel="stylesheet">
+
+
+
+    <style>
+.control{
+    display: flex;
+    padding-top: 30px;
+    padding-left:30px
+}
+.back{
+    font-family: 'Raleway', sans-serif;
+    font-size: 15px;
+    color: black;
+    padding-left: 5px;
+}
+.home{
+    font-size: 15px;
+    font-family: 'Raleway', sans-serif;
+    color: black;
+    padding-left:8px
+}
+.topic{
+    font-size: 15px;
+    font-family: 'Raleway', sans-serif;
+    color: black;
+    padding-left: 3px;
+}
+.title{
+    display: flex;
+    padding-top:20px;
+    padding-left:40px
+}
+.title h1{
+    font-family: 'Raleway', sans-serif;
+}
+.title p{
+    margin-top: 15px;
+    margin-left: 10px;
+    color:gray;
+    
+}
+.filter{
+    width:100px;
+    height:30px;
+    border:1px solid black;
+    margin-left: 1000px;
+}
+.filter:hover{
+    background-color: black;
+    color: white;
+    transition: 0.7s;
+}
+.product{
+    display: flex;
+    flex-wrap: wrap;
+}
+*{
+    padding:0;
+    margin:0;
+    box-sizing: 0;
+}
+
+.head{
+    display:flex;
+    flex-direction: row;
+    justify-content: end;
+    background-color:white;
+}
+.fhead{
+    font-size: 13px;
+    text-decoration: none;
+    color:black;
+    padding:5px 8px
+}
+.line-doc{
+    margin-top: 5px;
+    border-left: 1px #CCCCCC solid;
+    height:18px
+}
+header{
+    display: flex;
+    height:60px;
+    background-color: white;
+    border-bottom:1px solid black;
+    padding-left:27%
+    
+}
+.imghead{
+    width:130px;
+    height:90px;
+    position: absolute;
+    top:-18px;
+    left: -20px;
+
+}
+.nav{
+    padding:15px 25px;
+    font-family: 'Noto Sans', sans-serif;
+    position: relative;
+    font-size: 15px;
+    color: black;
+    text-decoration: none;
+}
+
+.nav::after{
+    content: "";
+    position: absolute;
+    background-color: crimson;
+    height:3px;
+    width:0%;
+    top: 40px;
+    left:10px;
+    bottom: -10px;  
+    transition: 0.7s;
+}
+
+.nav:hover::after{
+ width: 80%;
+}
+.nav-icon{
+    font-size: 21px;
+    padding: 15px 13px;
+}
+.nav-icon:hover{
+    opacity: 0.7;
+}
+.nav-option{
+    color: black;
+}
+
+.input{
+    height:30px;
+    width:150px;
+ border:white 1px outset;
+ margin-top:10px
+ 
+}
+.input-nav input[type=text]{
+    padding-left:40px
+}
+.input-nav{
+    position: relative;
+    padding:0px 30px;
+    margin-left: 90px;
+    
+}
+#icon{
+    position: absolute;
+    left:39px;
+    bottom: 25px;
+}
+
+.hot-all{
+    display: flex;
+}
+.hot {
+    width:310px;
+    padding-left:20px;
+    padding-top:10px;
+    font-size: 10px;
+    
+}
+.buy-face{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    bottom: 330px;
+    left: 38%;
+    align-items: center;
+    color:white;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 15px;
+    width:80px;
+    height:60px;
+    background-color: black;
+    opacity: 0;
+    transition: 0.5s;
+}
+.hot:hover .hot-img{
+    opacity: 0.3;
+}
+.hot:hover .buy-face{
+    opacity: 1;
+}
+.hot img{   
+    object-fit: contain;
+    width:300px;
+    height: 300px;
+    transition: 0.5s;
+}
+.hot2:hover{
+    border: black solid 1px;
+}
+.detail{
+    border:1px solid white;
+    background-color: white;
+    font-size: 13px;
+    padding-bottom: 3px;
+    text-decoration: none;
+    color:black;
+    font-family: 'Open Sans', sans-serif;
+}
+.hot i{
+    font-size: 10px;
+    padding-top: 4px;
+}
+.img{
+    width: 100%;
+    object-fit: contain;
+}
+.price{
+    font-size: 18px;
+    padding-bottom:50px ;
+    padding-top: 4px;
+    color: crimson;
+}
+.price del{
+    color: black;
+}
+.page{
+    margin:auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.page a{
+    display: inline-block;
+    margin-left: 10px;
+}
+.page-control{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    color: black;
+    width:100px;
+    height:20px;
+    text-decoration: none;
+    text-align: center;
+    font-family: 'Noto Sans NKo Unjoined', sans-serif;
+
+}
+.page-control:hover{
+    background-color: crimson;
+    color: white;
+    transition: 0.7s;
+}
+.footer-log{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #EDE734;
+    height:70px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+
+}
+.footer-log button{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+   width:150px;
+   height:40px;
+   background-color:black;
+   color: white;
+  border: black 1px solid;
+  margin-left: 20px;
+}
+footer{
+    background-color: black;
+    padding-top: 30px;
+}
+.footer-icon{
+    display:flex;
+    justify-content: center;
+    height:80px
+}
+footer p{
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    color: white;
+}
+footer i{
+    padding-top:10px;
+    padding-left:5px
+}
+footer i:hover{
+    color:brown
+}
+.footer-log a{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+   width:150px;
+   height:40px;
+   background-color:black;
+   color: white;
+  border: black 1px solid;
+  margin-left: 20px;
+  font-size: 15px;
+  text-decoration: none;
+}
+.footer-log a:hover{
+    background-color: crimson;
+    transition: 0.7s;
+    
+}
+.page{
+    margin-left:40%
+}
+@media (min-width:1497px)and(max-width:1498px){
+   .hot{
+    padding-left: 50px;
+   }
+}
+
+    </style>
+    <script>
+        
+    </script>
+</head>
+<body>
+    <div class="all">
+        <div class="head">
+            <a href="#" class="fhead">English</a>
+            <div class="line-doc"></div>
+            <a href="#" class="fhead">Help</a>
+            <div class="line-doc"></div>
+            <a href="#" class="fhead">Wishlist</a>
+        </div>
+        <img class="imghead" src="./img/logo.png" alt="">
+    <header class="head1">
+      <a class="nav nav1" href="#men-info">NAM</a>
+      <a class="nav"  href="#girl-all">NỮ</a>
+      <a class="nav" href="#kids-all">TRẺ EM</a>
+      <a class="nav" href="#topic">CHỦ ĐỀ</a>
+      <a class="nav" href="#sale">  GIẢM GIÁ</a>
+      <div class="input-nav">
+        <i  id="icon" class="fas fa-search"></i> 
+        <input type="text" class="input"  placeholder="Search..." >
+      </div>
+      <a class="nav-option" href="./form-log.html"><i class="fa-sharp fa-regular fa-user nav-icon"> </i></a>
+      <a class="nav-option" href="#"><i class="fa-sharp fa-solid fa-cart-shopping nav-icon"></i></a>
+      <a class="nav-option" href="#"><i class="fa-sharp fa-regular fa-star nav-icon"></i></a>
+    </header>
+<div class="control">
+    <i class="fa fa-arrow-circle-o-left" style="font-size:15px"></i>
+    <a  class="back" onclick="history.back()" href="#"><b>Quay lại</b></a>
+    <a  class="home" href="./index.html">Trang chủ</a>
+    <p class="topic">/Nữ</p>
+</div>
+<div class="title">
+    <h1><i>NỮ</i></h1>
+    <p>[]</p>
+</div>
+<div class="product">
+    <div class="hot" onclick="location='13.html'">
+        <img class="hot-img" src="./img/super.jpg" alt="">
+        <a href="./13.html" class="detail">Disguise Unisex - Adult Deluxe Muscle Mr Incredible Costume </a><br/>
+        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+        <p class="price"><del>699.999₫</del>-349999₫</p>
+        <div class="buy-face">Mua Ngay</div> 
+      </div>
+      <div class="hot" onclick="location='14.html'">
+        <img class="hot-img" src="./img/image (5).jpg" alt="">
+        <a href="./14.html" class="detail">Minecraft Costume, Official Nether Armor Outfit for Kids Minecraft Costume
+        </a><br/>
+        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+        <p class="price"><del>699.999₫</del>-349999₫</p>
+        <div class="buy-face">Mua Ngay</div> 
+      </div>
+      <div class="hot" onclick="location='15.html'">
+        <img class="hot-img" src="./img/chup.jpg" alt="">
+        <a href="./15.html" class="detail">Child's Play Chucky Classic Kids Costume </a><br/>
+        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+        <p class="price"><del>699.999₫</del>-349999₫</p>
+        <div class="buy-face">Mua Ngay</div> 
+      </div>
+      
+      <div class="hot" onclick="location='16.html'">
+        <img class="hot-img" src="./img/ninja.jpg" alt="">
+        <a href="./16.html" class="detail" href="" >Disguise girls Raya Costume for Girls, Deluxe Official Disney Raya and the Last Dragon Costume
+        </a><br/>
+        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+        <p class="price"><del>999.999₫</del>-349999₫</p>
+        <div class="buy-face">Mua Ngay</div> 
+      </div>
+      <div class="hot" onclick="location='5.html'">
+        <img class="hot-img" src="./img/image (4).jpg" alt="">
+        <a  href="./5.html" class="detail">Rubie's Child's Five Nights at Freddy's Glamrock Freddy Costume </a><br/>
+        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+        <p class="price"><del>699.999₫</del>-349999₫</p>
+        <div class="buy-face">Mua Ngay</div> 
+      </div>
+      <div class="hot" onclick="location='6.html'">
+        <img class="hot-img" src="./img/mario (2).jpg" alt="">
+        <a href="./6.html" class="detail">Disguise Aladdin Street Rat Adult Costume </a><br/>
+        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+        <p class="price"><del>599.999₫</del>-349999₫</p>
+        <div class="buy-face">Mua Ngay</div> 
+      </div>
+      <div class="hot" onclick="location='7.html'">
+        <img class="hot-img" src="./img/steve.jpg" alt="">
+        <a href="./7.html" class="detail">Steve Classic Minecraft Costume, Multicolor, Medium (7-8)</a> <br/>
+        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+        <p class="price"><del>499.999₫</del>-349999₫</p>
+        <div class="buy-face">Mua Ngay</div> 
+      </div>
+      <div class="hot" onclick="location='8.html'"> 
+        <img class="hot-img" src="./img/harry.jpg" alt="">
+        <a href="./8.html" class="detail">Harry Potter Kids Classic Slytherin Robe Costume </a><br/>
+        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+        <p class="price"><del>999.999₫</del>-349999₫</p>
+        <div class="buy-face">Mua Ngay</div> 
+      </div>
+      <div class="hot" onclick="location='9.html'">
+        <img class="hot-img" src="./img/dress.jpg" alt="">
+        <a href="./1.html" class="detail">Rubie's Women's M3gan Costume Dress, As Shown </a><br/>
+        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+        <p class="price"><del>599.999₫</del>-349999₫</p>
+        <div class="buy-face">Mua Ngay</div> 
+      </div>
+      <div class="hot" onclick="location='10.html'">
+        <img class="hot-img" src="./img/deadpool.jpg" alt="">
+        <a href="./10.html" class="detail">Rubie's Men's Deadpool Deluxe Muscle Chest Costume and Mask </a><br/>
+        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+        <p class="price"><del>599.999₫</del>-349999₫</p>
+        <div class="buy-face">Mua Ngay</div> 
+      </div>
+      <div class="hot" onclick="location='11.html'">
+        <img class="hot-img" src="./img/pepa.jpg" alt="">
+        <a href="./11.html" class="detail">Piggy Costume for Kids, Official Piggy Video Game Costume Outfit and Mask </a><br/>
+        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+        <p class="price"><del>499.999₫</del>-349999₫</p>
+        <div class="buy-face">Mua Ngay</div> 
+      </div>
+      <div class="hot" onclick="location='12.html'">
+        <img class="hot-img" src="./img/t-rex.jpg" alt="">
+        <a href="./12.html" class="detail">Rubie's Adult Original T-REX Inflatable Costume with Dinosaur Costume Sound</a><br/>
+        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+        <p class="price"><del>999.999₫</del>-349999₫</p>
+        <div class="buy-face">Mua Ngay</div> 
+      </div>
+      <div class="hot" onclick="location='13.html'">
+        <img class="hot-img" src="./img/super.jpg" alt="">
+        <p class="discount1">50% off</p>
+        <a href="./13.html" class="detail">Disguise Unisex - Adult Deluxe Muscle Mr Incredible Costume </a><br/>
+        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+        <p class="price"><del>699.999₫</del>-349999₫</p>
+        <div class="buy-face">Mua Ngay</div> 
+      </div>
+      <div class="hot" onclick="location='14.html'">
+        <img class="hot-img" src="./img/image (5).jpg" alt="">
+        <p class="discount1">50% off</p>
+        <a href="./14.html" class="detail">Minecraft Costume, Official Nether Armor Outfit for Kids Minecraft Costume
+        </a><br/>
+        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+        <p class="price"><del>699.999₫</del>-349999₫</p>
+        <div class="buy-face">Mua Ngay</div> 
+      </div>
+      <div class="hot" onclick="location='15.html'">
+        <img class="hot-img" src="./img/chup.jpg" alt="">
+        <p class="discount1">50% off</p>
+        <a href="./15.html" class="detail">Child's Play Chucky Classic Kids Costume </a><br/>
+        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+        <p class="price"><del>699.999₫</del>-349999₫</p>
+        <div class="buy-face">Mua Ngay</div> 
+      </div>
+      
+      <div class="hot" onclick="location='16.html'">
+        <img class="hot-img" src="./img/ninja.jpg" alt="">
+        <p class="discount1">50% off</p>
+        <a href="./16.html" class="detail" href="" >Disguise girls Raya Costume for Girls, Deluxe Official Disney Raya and the Last Dragon Costume
+        </a><br/>
+        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+        <p class="price"><del>999.999₫</del>-349999₫</p>
+        <div class="buy-face">Mua Ngay</div> 
+      </div>
+      <div class="hot" onclick="location='16.html'">
+        <img class="hot-img" src="./img/ninja.jpg" alt="">
+        <a href="./16.html" class="detail" href="" >Disguise girls Raya Costume for Girls, Deluxe Official Disney Raya and the Last Dragon Costume
+        </a><br/>
+        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+        <p class="price"><del>999.999₫</del>-349999₫</p>
+        <div class="buy-face">Mua Ngay</div> 
+      </div>
+      <div class="hot" onclick="location='5.html'">
+        <img class="hot-img" src="./img/image (4).jpg" alt="">
+        <a  href="./5.html" class="detail">Rubie's Child's Five Nights at Freddy's Glamrock Freddy Costume </a><br/>
+        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+        <p class="price"><del>699.999₫</del>-349999₫</p>
+        <div class="buy-face">Mua Ngay</div> 
+      </div>
+      <div class="hot" onclick="location='6.html'">
+        <img class="hot-img" src="./img/mario (2).jpg" alt="">
+        <a href="./6.html" class="detail">Disguise Aladdin Street Rat Adult Costume </a><br/>
+        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+        <p class="price"><del>599.999₫</del>-349999₫</p>
+        <div class="buy-face">Mua Ngay</div> 
+      </div>
+      <div class="hot" onclick="location='7.html'">
+        <img class="hot-img" src="./img/steve.jpg" alt="">
+        <a href="./7.html" class="detail">Steve Classic Minecraft Costume, Multicolor, Medium (7-8)</a> <br/>
+        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+        <p class="price"><del>499.999₫</del>-349999₫</p>
+        <div class="buy-face">Mua Ngay</div> 
+      </div>
+</div>
+      <div class="page">
+        <a class="page-control" href="#"><i class='fas fa-chevron-left' style='font-size:15px'></i> Sau</a>
+        <a class="page-control" href="#"> Tiếp <i class='fas fa-chevron-right' style='font-size:15px'></i> </a>
+      </div>
+</div>
+<div class="footer-log">
+    <p>
+      ĐĂNG KÍ & NHẬN ƯU ĐÃI 30% 
+    </p>
+    <a>ĐĂNG KÍ NGAY</a>
+  </div>
+  <footer>
+    <p>YOU CAN FIND US AT</p>
+    <div class="footer-icon">
+    <i class="fa fa-facebook-official w3-hover-opacity" style="font-size:18px; color: white;"></i>
+    <i class="fa fa-instagram w3-hover-opacity" style="font-size:18px; color: white;"></i>
+    <i class="fa fa-snapchat w3-hover-opacity" style="font-size:18px; color: white;"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity" style="font-size:18px; color:white"></i>
+    <i class="fa fa-linkedin w3-hover-opacity" style="font-size:18px;color:white"></i>
+    </div>
+</footer>
+</body>
+</html>
